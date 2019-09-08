@@ -27,20 +27,10 @@ class Show < ActiveRecord::Base
     # Character.where("show_id = ?", self.id).name.first
     # Show.where("id = ?", self.id)
     # Character.where("show_id = ?", self.id)
-    "test"
+    # self.idcharacters
+    # Characters.where("character.show_id = ?", self.id)
+    # self.id # this show
+    # Character.show_id # the character we want
   end
-
-
-
-
-  # def full_name
-  #   self.first_name
-  #   self.last_name
-  # end
-  #
-  # Define a method in the Show class called #actors_list that returns an Array of the full
-  # names of each actor associated with the a show.
-  # Remember, a show should have many actors through characters.
-  #
 
 end
