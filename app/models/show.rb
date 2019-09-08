@@ -28,7 +28,7 @@ class Show < ActiveRecord::Base
     # Show.where("id = ?", self.id)
     # Character.where("show_id = ?", self.id)
     # self.idcharacters
-    # Characters.where("character.show_id = ?", self.id)
+    Characters.where("character.show_id = ?", self.id)
     # self.id # this show
     # Character.show_id # the character we want
   end
