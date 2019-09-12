@@ -14,3 +14,6 @@ class Actor < ActiveRecord::Base
   end 
   
 end
+
+
+#this is a test
