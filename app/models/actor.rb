@@ -1,5 +1,5 @@
 class Actor < ActiveRecord::Base
-    has_many :charaters
+    has_many :characters
     has_many :shows, through: :characters
 
     def full_name 
@@ -10,7 +10,7 @@ class Actor < ActiveRecord::Base
         person = self.characters.map do |value|
         value.name
         end
-        tv = self.shows.map do |values|
+        tv = self.shows.map do |value|
         value.name
         end
         "#{person.join}" " - " "#{tv.join}"
